@@ -13,10 +13,30 @@ if(contemletras)
 }
 else
 {
-   
+    Dictionary<char, string> numerosPorExtenso = new Dictionary<char, string>()
+    {
+        {'0', "Zero"},
+        {'1', "Um"},
+        {'2', "Dois"},
+        {'3', "Três"},
+        {'4', "Quatro"},
+        {'5', "Cinco"},
+        {'6', "Seis"},
+        {'7', "Sete"},
+        {'8', "Oito"},
+        {'9', "Nove"}
+    };
+
+    foreach(char c in texto)
+    {
+        if(numerosPorExtenso.ContainsKey(c))
+        {
+            Console.WriteLine(numerosPorExtenso[c]);
+        }
+    }
 }
 
-////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////FUNÇÕES////////////////////////////////////////////
 
 static void Conferesetemletras(ref string texto, ref bool contemletras, ref List<char> listadecaracteres, ref List<string> listadecaracterespermitidos)
 {
