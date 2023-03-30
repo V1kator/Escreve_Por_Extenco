@@ -13,23 +13,13 @@ if(contemletras)
 }
 else
 {
-    Dictionary<char, string> numerosPorExtenso = new Dictionary<char, string>()
-    {
-        {'0', "Zero"},
-        {'1', "Um"},
-        {'2', "Dois"},
-        {'3', "Três"},
-        {'4', "Quatro"},
-        {'5', "Cinco"},
-        {'6', "Seis"},
-        {'7', "Sete"},
-        {'8', "Oito"},
-        {'9', "Nove"}
-    };
+    
 
     foreach(char c in texto)
     {
-        if(numerosPorExtenso.ContainsKey(c))
+        Dictionary<char, string> numerosPorExtenso = CriarDicionario();
+
+        if (numerosPorExtenso.ContainsKey(c))
         {
             Console.WriteLine(numerosPorExtenso[c]);
         }
@@ -61,4 +51,23 @@ static void Conferesetemletras(ref string texto, ref bool contemletras, ref List
             break;
         }
     }
+}
+
+static Dictionary<char, string> CriarDicionario()
+{
+    Dictionary<char, string> numerosPorExtenso = new Dictionary<char, string>()
+    {
+        {'0', "Zero"},
+        {'1', "Um"},
+        {'2', "Dois"},
+        {'3', "Três"},
+        {'4', "Quatro"},
+        {'5', "Cinco"},
+        {'6', "Seis"},
+        {'7', "Sete"},
+        {'8', "Oito"},
+        {'9', "Nove"}
+    };
+
+    return numerosPorExtenso;
 }

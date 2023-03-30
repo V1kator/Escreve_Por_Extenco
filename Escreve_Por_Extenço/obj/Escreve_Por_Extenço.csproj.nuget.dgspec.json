@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\Teste\\C#\\Escreve Por Extenço\\Escreve_Por_Extenço\\Escreve_Por_Extenço.csproj": {}
+    "D:\\Desktop\\Teste\\C#\\Escreve_Por_Extenco\\Escreve_Por_Extenço\\Escreve_Por_Extenço.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\Teste\\C#\\Escreve Por Extenço\\Escreve_Por_Extenço\\Escreve_Por_Extenço.csproj": {
+    "D:\\Desktop\\Teste\\C#\\Escreve_Por_Extenco\\Escreve_Por_Extenço\\Escreve_Por_Extenço.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\Teste\\C#\\Escreve Por Extenço\\Escreve_Por_Extenço\\Escreve_Por_Extenço.csproj",
+        "projectUniqueName": "D:\\Desktop\\Teste\\C#\\Escreve_Por_Extenco\\Escreve_Por_Extenço\\Escreve_Por_Extenço.csproj",
         "projectName": "Escreve_Por_Extenço",
-        "projectPath": "D:\\Desktop\\Teste\\C#\\Escreve Por Extenço\\Escreve_Por_Extenço\\Escreve_Por_Extenço.csproj",
+        "projectPath": "D:\\Desktop\\Teste\\C#\\Escreve_Por_Extenco\\Escreve_Por_Extenço\\Escreve_Por_Extenço.csproj",
         "packagesPath": "C:\\Users\\Gud Gud\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\Teste\\C#\\Escreve Por Extenço\\Escreve_Por_Extenço\\obj\\",
+        "outputPath": "D:\\Desktop\\Teste\\C#\\Escreve_Por_Extenco\\Escreve_Por_Extenço\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gud Gud\\AppData\\Roaming\\NuGet\\NuGet.Config",
