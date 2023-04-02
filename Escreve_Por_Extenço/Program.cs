@@ -100,7 +100,7 @@ else
             return numerosPorExtenso[dezena] + " e " + numerosPorExtenso[unidade];
         }
         else if (numero < 1000)
-        {
+        {            
             int centena = numero / 100 * 100;
             int resto = numero % 100;
             if (resto == 0)
@@ -109,12 +109,17 @@ else
             }
             else
             {
+                if (numero > 100 && numero <= 199)
+                {
+                return "Cento" + " e " + TranscreverNumero(resto, numerosPorExtenso);
+                }
+
                 return numerosPorExtenso[centena] + " e " + TranscreverNumero(resto, numerosPorExtenso);
             }
         }
         else
         {
-            return "Número inválido.";
+            return "Atualmente o programa só transcreve os números de 0 a 999";
         }
     }
 }
