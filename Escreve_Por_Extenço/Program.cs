@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 Console.WriteLine("Informe alguns números (somente inteiros):");
 string texto = Console.ReadLine();
 
-if (!Regex.IsMatch(texto, @"^\d+$"))
+if (texto.Any(c => !Char.IsDigit(c)))
 {
     Console.WriteLine("Erro: o texto informado deve conter somente números.");
 }
