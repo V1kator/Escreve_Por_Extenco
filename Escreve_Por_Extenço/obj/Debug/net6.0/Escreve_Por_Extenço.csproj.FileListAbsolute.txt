@@ -13,3 +13,18 @@ D:\Desktop\Teste\C#\Escreve Por Extenço\Escreve_Por_Extenço\obj\Debug\net6.0\r
 D:\Desktop\Teste\C#\Escreve Por Extenço\Escreve_Por_Extenço\obj\Debug\net6.0\Escreve_Por_Extenço.pdb
 D:\Desktop\Teste\C#\Escreve Por Extenço\Escreve_Por_Extenço\obj\Debug\net6.0\Escreve_Por_Extenço.genruntimeconfig.cache
 D:\Desktop\Teste\C#\Escreve Por Extenço\Escreve_Por_Extenço\obj\Debug\net6.0\ref\Escreve_Por_Extenço.dll
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\bin\Debug\net6.0\Escreve_Por_Extenço.exe
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\bin\Debug\net6.0\Escreve_Por_Extenço.deps.json
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\bin\Debug\net6.0\Escreve_Por_Extenço.runtimeconfig.json
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\bin\Debug\net6.0\Escreve_Por_Extenço.dll
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\bin\Debug\net6.0\Escreve_Por_Extenço.pdb
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\obj\Debug\net6.0\Escreve_Por_Extenço.csproj.AssemblyReference.cache
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\obj\Debug\net6.0\Escreve_Por_Extenço.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\obj\Debug\net6.0\Escreve_Por_Extenço.AssemblyInfoInputs.cache
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\obj\Debug\net6.0\Escreve_Por_Extenço.AssemblyInfo.cs
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\obj\Debug\net6.0\Escreve_Por_Extenço.csproj.CoreCompileInputs.cache
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\obj\Debug\net6.0\Escreve_Por_Extenço.dll
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\obj\Debug\net6.0\refint\Escreve_Por_Extenço.dll
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\obj\Debug\net6.0\Escreve_Por_Extenço.pdb
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\obj\Debug\net6.0\Escreve_Por_Extenço.genruntimeconfig.cache
+D:\Desktop\Teste\C#\Escreve_Por_Extenco\Escreve_Por_Extenço\obj\Debug\net6.0\ref\Escreve_Por_Extenço.dll

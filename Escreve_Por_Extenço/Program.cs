@@ -1,73 +1,120 @@
-﻿Console.WriteLine("Informe alguns Número (somente inteiros):");
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+
+Console.WriteLine("Informe alguns números (somente inteiros):");
 string texto = Console.ReadLine();
 
-List<char> listadecaracteres = new List<char>();
-List<string> listadecaracterespermitidos = new List<string>();
-bool contemletras = false;
-
-Conferesetemletras(ref texto, ref contemletras, ref listadecaracteres, ref listadecaracterespermitidos);
-
-if(contemletras)
+if (!Regex.IsMatch(texto, @"^\d+$"))
 {
-    Console.WriteLine("Erro: o texto informado contém letras ou caracteres inválidos.");
+    Console.WriteLine("Erro: o texto informado deve conter somente números.");
 }
 else
 {
-    
+    List<string> numeros = ObterNumeros(texto);
 
-    foreach(char c in texto)
+    if (!numeros.Any())
     {
-        Dictionary<char, string> numerosPorExtenso = CriarDicionario();
+        Console.WriteLine("Erro: o texto informado não contém números.");
+    }
+    else
+    {
+        var numerosPorExtenso = CriarDicionario();
 
-        if (numerosPorExtenso.ContainsKey(c))
+        foreach (string numero in numeros)
         {
-            Console.WriteLine(numerosPorExtenso[c]);
+            if (int.TryParse(numero, out int valor))
+            {
+                string numeroPorExtenso = TranscreverNumero(valor, numerosPorExtenso);
+                Console.WriteLine(numeroPorExtenso);
+            }
+            else
+            {
+                Console.WriteLine("Erro: o valor informado não é um número inteiro.");
+            }
         }
     }
-}
 
-/////////////////////////////////////FUNÇÕES////////////////////////////////////////////
 
-static void Conferesetemletras(ref string texto, ref bool contemletras, ref List<char> listadecaracteres, ref List<string> listadecaracterespermitidos)
-{
-
-    foreach (char c in texto)
+    static List<string> ObterNumeros(string texto)
     {
-        listadecaracteres.Add(c);
+        return texto.Split().Where(s => int.TryParse(s, out _)).ToList();
     }
 
-    for (int i = 0; i <= 9; i++)
+    static Dictionary<int, string> CriarDicionario()
     {
-        string caracterespermitidos = Convert.ToString(i);
-        listadecaracterespermitidos.Add(caracterespermitidos);
-    }
-
-    foreach (char c in listadecaracteres)
-    {
-        string s = Convert.ToString(c);
-        if (!listadecaracterespermitidos.Contains(s))
+        return new Dictionary<int, string>()
         {
-            contemletras = true;
-            break;
+            {0, "Zero"},
+            {1, "Um"},
+            {2, "Dois"},
+            {3, "Três"},
+            {4, "Quatro"},
+            {5, "Cinco"},
+            {6, "Seis"},
+            {7, "Sete"},
+            {8, "Oito"},
+            {9, "Nove"},
+            {10, "Dez"},
+            {11, "Onze"},
+            {12, "Doze"},
+            {13, "Treze"},
+            {14, "Quatorze"},
+            {15, "Quinze"},
+            {16, "Dezesseis"},
+            {17, "Dezessete"},
+            {18, "Dezoito"},
+            {19, "Dezenove"},
+            {20, "Vinte"},
+            {30, "Trinta"},
+            {40, "Quarenta"},
+            {50, "Cinquenta"},
+            {60, "Sessenta"},
+            {70, "Setenta"},
+            {80, "Oitenta"},
+            {90, "Noventa"},
+            {100, "Cem"},
+            {200, "Duzentos"},
+            {300, "Trezentos"},
+            {400, "Quatrocentos"},
+            {500, "Quinhentos"},
+            {600, "Seiscentos"},
+            {700, "Setecentos"},
+            {800, "Oitocentos"},
+            {900, "Novecentos"}
+        };
+    }
+
+    static string TranscreverNumero(int numero, Dictionary<int, string> numerosPorExtenso)
+    {
+        if (numerosPorExtenso.ContainsKey(numero))
+        {
+            return numerosPorExtenso[numero];
+        }
+        else if (numero < 100)
+        {
+            int dezena = numero / 10 * 10;
+            int unidade = numero % 10;
+            return numerosPorExtenso[dezena] + " e " + numerosPorExtenso[unidade];
+        }
+        else if (numero < 1000)
+        {
+            int centena = numero / 100 * 100;
+            int resto = numero % 100;
+            if (resto == 0)
+            {
+                return numerosPorExtenso[centena];
+            }
+            else
+            {
+                return numerosPorExtenso[centena] + " e " + TranscreverNumero(resto, numerosPorExtenso);
+            }
+        }
+        else
+        {
+            return "Número inválido.";
         }
     }
-}
-
-static Dictionary<char, string> CriarDicionario()
-{
-    Dictionary<char, string> numerosPorExtenso = new Dictionary<char, string>()
-    {
-        {'0', "Zero"},
-        {'1', "Um"},
-        {'2', "Dois"},
-        {'3', "Três"},
-        {'4', "Quatro"},
-        {'5', "Cinco"},
-        {'6', "Seis"},
-        {'7', "Sete"},
-        {'8', "Oito"},
-        {'9', "Nove"}
-    };
-
-    return numerosPorExtenso;
 }
